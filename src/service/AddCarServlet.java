@@ -31,7 +31,7 @@ public class AddCarServlet  extends HttpServlet {
 	
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		// 先判断用户是否登录
+		// 先判断用户是否登录111111111
 		Cookie cookie = ServletUtils.getCookie(request, "user");
 		if (cookie == null) {
 			response.getWriter().println("抱歉，你当前还未登录，2秒后调到登录页面");
